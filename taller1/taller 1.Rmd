@@ -124,7 +124,7 @@ abline(v = 76)
 
 ```{r}
 cat("Los que viviran menos de 55 son un porsentaje de: ",pnorm(55,76,5)*100)
-cat("\nLos que viviran mas de 75 son un porsentaje de: ",(1-pnorm(75,76,5))*100)
+cat("\nLos que viviran mas de 75 son un porcentaje de: ",(1-pnorm(75,76,5))*100)
 x <- seq(50, 90, 0.1)
 plot(x, dnorm(x, mean = 76, sd = 5), type = "l",
      ylim = c(0, 0.08), xlab = "Edad", ylab = "Frecuencia", 
@@ -143,7 +143,7 @@ text(55, 0.01, "0.0013%")
 text(80, 0.02, "P(x>75)")
 text(80, 0.01, "57.926%")
 abline(v = 76)
-cat("\nCon un porsentaje total de: ",((1-pnorm(75,76,5))+pnorm(55,76,5))*100)
+cat("\nCon un porcentaje total de: ",((1-pnorm(75,76,5))+pnorm(55,76,5))*100)
 ```
 
 
